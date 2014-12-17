@@ -39,7 +39,8 @@ public class RadarTest {
 	    }
 
 	    /*
-	     * Tests the initial state 
+	     * Tests the initial state
+	     * verifies the expected velocitity matches the velocity calculated by radar
 	     */
 		@Test
 	    public void testInitialState() throws Exception
@@ -81,6 +82,7 @@ public class RadarTest {
 	        System.out.println("Velocity "+velocity);
 	        System.out.println("expectedVelocity "+expectedVelocity);
 	  
+	  	// verifies the expected velocitity matches the velocity calculated by radar
 	       assertEquals(expectedVelocity, velocity,0.0);
 	       
 	        
@@ -89,7 +91,7 @@ public class RadarTest {
 
 	    
 	    /*
-	     * Tests the state after 3 generations
+	     * Tests final state
 	     */
 	    @Test
 	    public void testFinalState()
